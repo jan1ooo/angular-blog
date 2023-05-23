@@ -5,6 +5,12 @@
   justify-content: center;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+  margin-top: .2rem;
+}
+
 @media screen and (max-width: 992px) {
   .container_article{
     margin-top: 1rem;
@@ -13,5 +19,6 @@
     justify-content: center;
   }
 }
+
 
 

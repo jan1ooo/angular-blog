@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  border: 0.1px solid rgba(255, 255, 255, 0.048);
+  background-color: rgba(255, 255, 255, 0.105);
   border-radius: 10px;
   margin-bottom: 1rem;
 }
@@ -16,22 +16,30 @@
   align-self: baseline;
   margin-top: 1rem;
   margin-left: 1rem;
+  background-color: rgba(255, 255, 255, 0.105);
 }
 
 .small-card_author > p{
-  margin-top: 1rem;
+  padding-top: 1rem;
   font-size: 7pt;
   font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.105);
   color: gray;
 }
 
 .small-card_title > h1 {
   font-size: 15pt;
-  margin-top: 2rem;
+  padding-top: 2rem;
+  background-color: rgba(255, 255, 255, 0.105);
 }
 
 .small-card_photo > img {
   margin-left: 1rem;
-  width: 20vw;
+  background-color: rgba(255, 255, 255, 0.105);
+  width: 17em;
+}
+
+.small-card_photo{
+  background-color: rgba(255, 255, 255, 0.105);
 }
 
