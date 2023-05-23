@@ -11,10 +11,11 @@ header {
   margin-top: .2rem;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 375px) {
   .container_article{
     margin-top: 1rem;
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
   }
