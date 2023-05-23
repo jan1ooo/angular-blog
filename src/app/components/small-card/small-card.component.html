@@ -1,6 +1,6 @@
 <div class="container_small-card">
 
-  <a href="https://adcombat.com/" target="_blank">
+  <a [routerLink]="''" target="_blank">
     <div class="small-card_photo">
       <img src="{{ photoCover }}" alt="">
     </div>
@@ -11,7 +11,7 @@
       <p>{{ author }}</p>
     </div>
 
-    <a href="https://adcombat.com/" target="_blank">
+    <a [routerLink]="['content/', Id]" target="_blank">
       <div class="small-card_title">
         <h1>{{ description }}</h1>
       </div>
