@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { map } from 'rxjs';
+import { dataFake } from 'src/app/data/dataDake';
 
 @Component({
   selector: 'app-content',
@@ -13,16 +15,25 @@ export class ContentComponent implements OnInit{
   author:string = ""
   description:string = ""
 
-  constructor(
-    private route:ActivatedRoute
-  ){
+  private id:string | null = "0"
+
+  constructor(private route:ActivatedRoute){
 
   }
 
   ngOnInit(): void {
-    this.route.paramMap.subscribe(
-
+    this.route.paramMap.subscribe(value =>
+      this.id = value.get("id")
     )
+    this.setValuesToComponent(this.id)
+  }
+
+  setValuesToComponent(id:string | null){
+    const result = dataFake.filter(article => article.id == id)[0]
+    this.title = result.title
+    this.description = result.description
+    this.author = result.author
+    this.photoCover = result.photo
   }
 
 }
